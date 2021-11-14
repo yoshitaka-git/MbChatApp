@@ -1,0 +1,61 @@
+#home {
+    position: fixed;
+    right: 30px;
+    bottom: 10px;
+}
+ul {
+    list-style:none;    
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.box {
+    position: relative;
+    width: 67%;
+    padding:5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.box:after {
+    content: '';
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    bottom:5px;
+}
+.box:before {
+    content: '';
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    bottom:5px;
+}
+.box-left {
+    background: cyan;
+    margin-left: 20px;
+}
+.box-left:after {
+    border-right: 10px solid cyan;
+    left: -19px;
+}
+.box-left:before {
+    border-right: 10px solid black;
+    left: -20px;
+}
+.box-right {
+    background: pink;
+    margin-right: 20px;
+    margin-left:25%;
+}
+.box-right:after {
+    border-left: 10px solid pink;
+    right: -19px;
+}
+.box-right:before {
+    border-left: 10px solid black;
+    right: -20px;
+}
